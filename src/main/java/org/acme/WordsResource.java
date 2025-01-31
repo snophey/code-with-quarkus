@@ -15,8 +15,6 @@ public class WordsResource {
 
     @GET
     public String getWords() {
-        System.out.println("App started");
-        Log.info("Application started. Here are the words:");
         return words.stream().collect(Collectors.joining(" ")) + "\n";
     }
 }
